@@ -62,9 +62,9 @@ cd Pause-Regal-Vender-Rider-App
 ### 2️⃣ Install dependencies
 flutter pub get
 
-##🔑 Firebase Configuration (Required)
+## 🔑 Firebase Configuration (Required)
 The Rider App requires Firebase configuration for both Android and iOS.
-###📱 Android Setup
+### 📱 Android Setup
 
 1-Go to Firebase Console
 2-Add your Android app
@@ -72,14 +72,14 @@ The Rider App requires Firebase configuration for both Android and iOS.
 4-Place it in:
 android/app/google-services.json
 
-###📱 IOS Setup
+### 📱 IOS Setup
 
 1-Add your iOS app to Firebase
 2-Download GoogleService-Info.plist
 3-Place it in:
 ios/Runner/GoogleService-Info.plist
 
-##🌍 Google Maps API Keys
+## 🌍 Google Maps API Keys
 Make sure you enable:
 
 Maps SDK for Android
@@ -98,12 +98,12 @@ Add your API key to:
     android:value="YOUR_ANDROID_MAPS_API_KEY"/>
 
 
-###iOS:
+### iOS:
 Add your key inside AppDelegate.swift:
 
 GMSServices.provideAPIKey("YOUR_IOS_MAPS_API_KEY")
 
-##▶️ Run the Project
+## ▶️ Run the Project
 flutter run
 
 
