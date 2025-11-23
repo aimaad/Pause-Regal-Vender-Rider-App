@@ -1,146 +1,63 @@
-🚚 Pause Regal – Vendor Rider App
+# 🚚 Pause Regal – Vendor Rider App
 
-Pause Regal – Vendor Rider App is the official delivery application used by riders to receive, manage, and deliver customer orders efficiently.
+Pause Regal – Vendor Rider App is the official delivery application used by riders to receive, manage, and deliver customer orders efficiently.  
 This app is part of the Pause Regal ecosystem, supporting a smooth end-to-end food ordering and delivery workflow for a single vendor.
 
-🧩 Pause Regal Ecosystem
+## 🧩 Pause Regal Ecosystem
 
 The complete Pause Regal solution contains:
 
-🛠️ Vendor Admin Dashboard
-
+### 🛠️ Vendor Admin Dashboard
 Where the vendor manages:
+- Menu items
+- Orders
+- Delivery assignments
+- Working hours
+- Payments & settings
 
-Menu items
+### 🍽️ Customer App
+- Customers browse dishes, place orders, select delivery addresses, and pay online.
 
-Orders
+### 🚚 Delivery Rider App (this repository)
+- Riders receive orders, navigate to customers, and update delivery status in real time.
 
-Delivery assignments
+## 🚀 Features – Rider App
 
-Working hours
+### 📦 Order Management
+- Receive new delivery tasks immediately
+- View order details (customer info, items, total, notes)
+- Accept or decline delivery tasks
 
-Payments & settings
+### 🗺️ Navigation
+- Integrated Google Maps
+- Step-by-step navigation to vendor location and customer address
+- Real-time location tracking
 
-🍽️ Customer App
-
-Customers browse dishes, place orders, select delivery addresses, and pay online.
-
-🚚 Delivery Rider App (this repository)
-
-Riders receive orders, navigate to customers, and update delivery status in real time.
-
-🚀 Features – Rider App
-📦 Order Management
-
-Receive new delivery tasks immediately
-
-View order details (customer info, items, total, notes)
-
-Accept or decline delivery tasks
-
-🗺️ Navigation
-
-Integrated Google Maps
-
-Step-by-step navigation to vendor location and customer address
-
-Real-time location tracking
-
-🔔 Status Updates
-
+### 🔔 Status Updates
 Update order status:
+- On the way to vendor
+- Picked up
+- Out for delivery
+- Delivered  
 
-On the way to vendor
+Vendor and customer receive real-time notifications.
 
-Picked up
+### 👤 Rider Profile
+- Manage account information
+- View delivery history
+- Check performance and statistics (depending on backend)
 
-Out for delivery
+## 🏗️ Tech Stack
+- Flutter (Dart)
+- Firebase (push notifications, API keys, analytics depending on your setup)
+- REST API for all backend communication
+- Google Maps SDK
+- Location & background tracking
 
-Delivered
+## 📥 Installation & Setup
 
-Vendor and customer receive real-time notifications
-
-👤 Rider Profile
-
-Manage account information
-
-View delivery history
-
-Check performance and statistics (depending on backend)
-
-🏗️ Tech Stack
-
-Flutter (Dart)
-
-Firebase (push notifications, API keys, analytics depending on your setup)
-
-REST API for all backend communication
-
-Google Maps SDK
-
-Location & background tracking
-
-📥 Installation & Setup
-1️⃣ Clone the repository
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/aimaad/Pause-Regal-Vender-Rider-App
 cd Pause-Regal-Vender-Rider-App
-
-2️⃣ Install dependencies
-flutter pub get
-
-🔑 Firebase Configuration (Required)
-
-The Rider App requires Firebase configuration for both Android and iOS.
-
-📱 Android Setup
-
-Go to Firebase Console
-
-Add your Android app
-
-Download google-services.json
-
-Place it in:
-
-android/app/google-services.json
-
-🍏 iOS Setup
-
-Add your iOS app to Firebase
-
-Download GoogleService-Info.plist
-
-Place it in:
-
-ios/Runner/GoogleService-Info.plist
-
-🌍 Google Maps API Keys
-
-Make sure you enable:
-
-Maps SDK for Android
-
-Maps SDK for iOS
-
-Geocoding API
-
-Directions API (recommended for navigation routes)
-
-Android
-
-Add your API key to:
-
-android/app/src/main/AndroidManifest.xml
-
-<meta-data
-    android:name="com.google.android.geo.API_KEY"
-    android:value="YOUR_ANDROID_MAPS_API_KEY"/>
-
-iOS
-
-Add your key inside AppDelegate.swift:
-
-GMSServices.provideAPIKey("YOUR_IOS_MAPS_API_KEY")
-
-▶️ Run the Project
-flutter run
+ ### 2️⃣ Install dependencies
