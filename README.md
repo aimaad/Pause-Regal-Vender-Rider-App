@@ -82,21 +82,18 @@ ios/Runner/GoogleService-Info.plist
 ## 🌍 Google Maps API Keys
 Make sure you enable:
 
-Maps SDK for Android
+  -Maps SDK for Android
+  -Maps SDK for iOS
+  -Geocoding API
+  -Directions API (recommended for navigation routes)
 
-Maps SDK for iOS
-
-Geocoding API
-
-Directions API (recommended for navigation routes)
-
-###Android:
+### Android:
 Add your API key to:
-
+```bash
 <meta-data
     android:name="com.google.android.geo.API_KEY"
     android:value="YOUR_ANDROID_MAPS_API_KEY"/>
-
+```
 
 ### iOS:
 Add your key inside AppDelegate.swift:
