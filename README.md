@@ -57,7 +57,54 @@ Vendor and customer receive real-time notifications.
 ## 📥 Installation & Setup
 
 ### 1️⃣ Clone the repository
-```bash
 git clone https://github.com/aimaad/Pause-Regal-Vender-Rider-App
 cd Pause-Regal-Vender-Rider-App
- ### 2️⃣ Install dependencies
+### 2️⃣ Install dependencies
+flutter pub get
+
+##🔑 Firebase Configuration (Required)
+The Rider App requires Firebase configuration for both Android and iOS.
+###📱 Android Setup
+
+1-Go to Firebase Console
+2-Add your Android app
+3-Download google-services.json
+4-Place it in:
+android/app/google-services.json
+
+###📱 IOS Setup
+
+1-Add your iOS app to Firebase
+2-Download GoogleService-Info.plist
+3-Place it in:
+ios/Runner/GoogleService-Info.plist
+
+##🌍 Google Maps API Keys
+Make sure you enable:
+
+Maps SDK for Android
+
+Maps SDK for iOS
+
+Geocoding API
+
+Directions API (recommended for navigation routes)
+
+###Android:
+Add your API key to:
+
+<meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="YOUR_ANDROID_MAPS_API_KEY"/>
+
+
+###iOS:
+Add your key inside AppDelegate.swift:
+
+GMSServices.provideAPIKey("YOUR_IOS_MAPS_API_KEY")
+
+##▶️ Run the Project
+flutter run
+
+
+
